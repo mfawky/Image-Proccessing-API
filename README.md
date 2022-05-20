@@ -60,9 +60,7 @@ Also, evertime you resize the same img it will be created again and again with t
 
 path, only if its not existed before in the assets\thumb folder.
 
-Also, the user is redirected to another page that throw him an 404 not found err if the img dosen't exist in either 
-assets\full OR assets\thumb folders.
-
+An error message should be provided to the user when an image has failed to process or does not exist.
 
     
 
