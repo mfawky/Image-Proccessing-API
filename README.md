@@ -40,13 +40,13 @@ Try this to test the img :
     
 You can add any img to the assets\full folder and test it
 
-Just write the name of the img and the new size you want it to be in
+Just write the name of the img and the new size you want it to be in the url
 
 for example : 
     
-    icelandwaterfall.jpg  // is located in the assets\full folder and i haven't tested it 
+    icelandwaterfall.jpg  // is located in the assets\full folder and i haven't tested it yet
 
-yet so you may try typing :
+so you may try typing :
 
     http://localhost:3000/api/images?fileName=icelandwaterfall&width=170&height=210
 
