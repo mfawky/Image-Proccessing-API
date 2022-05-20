@@ -8,9 +8,9 @@ Type ---> [ npm run build ] to compile and convert the ts into js
 
 Type ---> [ npm start OR npm run start ] to start the server
 
-Type ---> [ npm  ] 
+Type ---> [ npm run prettier ] to run prettier
 
-Type ---> [ npm  ] 
+Type ---> [ npm run lint ] to run eslint
 
 The URL of the app to test :
     - Try this to test the photo
