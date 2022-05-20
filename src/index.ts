@@ -11,19 +11,16 @@ app.get('/api/images', async (req: Request, res: Response): Promise<void> => {
 
   // this if checks if any one of the params are not existed
   if (!fileName || !width || !height) {
-    console.log('Mandatory input is missing')
     res.status(400).send('Mandatory input is missing')
     return
   }
 
   if (isNaN(+width) || +width < 1) {
-    console.log('invalid width')
     res.status(400).send('invalid width')
     return
   }
 
   if (isNaN(+height) || +height < 1) {
-    console.log('invalid height')
     res.status(400).send('invalid height')
     return
   }
@@ -39,9 +36,7 @@ app.get('/api/images', async (req: Request, res: Response): Promise<void> => {
     console.log('found as thumb')
     res.sendFile(thumbPath)
   } else {
-    console.log('resize full image')
     if (!fs.existsSync(fullPath)) {
-      console.log('File not found')
       res.send('File not found')
       return
     }
