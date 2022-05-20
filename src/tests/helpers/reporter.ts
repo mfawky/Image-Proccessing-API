@@ -14,3 +14,5 @@ jasmine.getEnv().addReporter(new SpecReporter({
     },
     customProcessors: [CustomProcessor],
 }))
+
+
