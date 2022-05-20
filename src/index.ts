@@ -6,9 +6,9 @@ import sharp from 'sharp'
 const app: Application = express()
 
 app.get('/api/images', (req: Request, res: Response) => {
-  var fileName = req.query.fileName
-  var width = req.query.width
-  var height = req.query.height
+  const fileName = req.query.fileName
+  const width = req.query.width
+  const height = req.query.height
 
   if (!fileName || !width || !height) {
     //throw exception
@@ -17,10 +17,10 @@ app.get('/api/images', (req: Request, res: Response) => {
     return
   }
 
-  var thumbPath = path.resolve(
+  const thumbPath = path.resolve(
     `./assets/thumb/${fileName}_thumb_${width}_${height}.jpg`
   )
-  var fullPath = path.resolve(`./assets/full/${fileName}.jpg`)
+  const fullPath = path.resolve(`./assets/full/${fileName}.jpg`)
 
   if (fs.existsSync(thumbPath)) {
     console.log('found as thumb')
