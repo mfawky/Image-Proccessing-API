@@ -13,6 +13,7 @@ app.get('/api/images', (req: Request, res: Response) => {
   if (!fileName || !width || !height) {
     //throw exception
     console.log('Mandatory input is missing')
+    res.status(400)
     res.send('Mandatory input is missing')
     return
   }
