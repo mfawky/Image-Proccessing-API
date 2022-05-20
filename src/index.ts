@@ -42,6 +42,6 @@ app.get('/api/images', (req: Request, res: Response) => {
 
 // start express server
 app.listen(3000, () => {
-  console.log(`Server is starting at prot: 3000`)
+  console.log('Server is starting at port: 3000')
 })
 export default app
