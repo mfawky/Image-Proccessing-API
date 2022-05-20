@@ -14,13 +14,14 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'prettier'],
-  ignorePatterns: ['build', 'spec',''],
+  ignorePatterns: ['build', 'spec'],
   rules: {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
     'prettier/prettier':0,
     'no-var': 'error',
     'prefer-const': 'error',
+    '@typescript-eslint/no-explicit-any':0
     
   },
   
