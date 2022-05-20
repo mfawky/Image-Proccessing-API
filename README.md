@@ -23,7 +23,7 @@ Type :
 
 Type : 
 
-     npm run prettier  
+     npm run format  
      // to run prettier
 
 Type :  
